@@ -1,0 +1,1273 @@
+@font-face {
+  font-family: 'Wonderia';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/Wonderia Font_D  by 7NTypes.otf')format('truetype');
+}
+@font-face {
+  font-family: 'Aston Script';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/Aston Script.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'Cochin Italic';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/Cochin Italic.otf')format('truetype');
+}
+@font-face {
+  font-family: 'Monesta Light';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/Monesta-Light.otf')format('truetype');
+}
+@font-face {
+  font-family: 'Tempting';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/Tempting.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'Bon Vivant';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/BonVivantSerif.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/DroidSerif.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'Citadel Script';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/Citadel Script Std Regular.otf')format('truetype');
+}
+@font-face {
+  font-family: 'London';
+  src: url('https://cdn.jsdelivr.net/gh/edwardnugraha138/font/london.fill-bold.ttf')format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  /* background-color: #181818; */
+  color: rgb(87, 13, 16);
+  transition: color .5s,background-color .5s;
+  line-height: 1.6;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navigation{
+  box-shadow: 0 4px 8px #0000000d,0 2px 20px #0000000d;
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  background-color: rgb(255 255 255);
+  border-radius: 9999px;
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  z-index: 50;
+  left: .5rem;
+  right: .5rem;
+  bottom: .5rem;
+  position: fixed;
+}
+
+.navigation button{
+  background-color: transparent;
+}
+
+.hidden{
+  display: none;
+}
+.container-section{
+  margin: 0 auto;
+  max-width: 480px;
+}
+.main-content {
+    opacity: 0;
+    visibility: hidden;
+}
+/* .main-content{
+  display: none;
+} */
+.cover-section{
+background-image: url("../assets/background-cover-coba.png");
+  background-color: #f5f3f1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  height: 100dvh;
+  position: relative;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  z-index: 11;
+}
+
+.cover-content{
+  padding-top: 4rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.background-cover{
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-duration: .4s;
+  opacity: 0;
+  transition-property: opacity,transform;
+  opacity: 1;
+  width: 16rem;
+  top: 2rem;
+  position: absolute;
+}
+
+.title-cover{
+  font-family: "Droid Serif"; 
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(87, 13, 16);
+  font-kerning: none;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-transform: uppercase;
+}
+
+.name-cover{
+  font-family: "Citadel Script"; 
+  line-height: 1.2;
+  z-index: 1;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(87, 13, 16);
+  font-kerning: none;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  margin-bottom: 0;
+}
+
+.date-cover{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Droid Serif";
+  font-style: normal;
+  color: rgb(87, 13, 16);
+  font-kerning: none;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+}
+.button-cover{
+  width: 70%;
+}
+.button-cover img{
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.bottom-section{
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  z-index: 50;
+}
+
+.box-invitation{
+  background: none;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.text-gray-600{
+  font-family: "Droid Serif";
+  font-size: 14px;
+}
+
+.text-gray-700{
+  font-family: "Cochin Italic";
+  font-size: 20px;
+}
+
+button{
+border: none;
+outline: none;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+padding-top: .625rem;
+/* border-radius: 9999px;
+background-color:rgb(87, 13, 16); */
+cursor: pointer;
+}
+
+.open-invitation{
+  font-family: "Droid Serif"; 
+  font-size: 15px; 
+  text-transform: none;
+  color: white;
+  margin-bottom: .625rem;
+  text-transform: capitalize;
+}
+
+.flex{
+  flex-direction: column;
+  display: flex;
+  z-index: 10;
+  position: relative;
+}
+.item-center{
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+video{
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.background{
+  background-image: url("../assets/Background.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  max-width: 480px;
+  height: 100vh;
+  height: 100dvh;
+  z-index: -10;
+}
+
+.rounded-section{
+  position: relative;
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-duration: .4s;
+  background-image: url('../assets/background-section-2.png');
+  transition-property: opacity,transform;
+  padding-top: 0;
+  padding-bottom: 15.5rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.gift-section{
+  position: relative;
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-duration: .4s;
+  background-image: url('../assets/section-7.png');
+  transition-property: opacity,transform;
+  padding-top: 15%;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.wish-section{
+  position: relative;
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-duration: .4s;
+  background-image: url('../assets/section-8.png');
+  transition-property: opacity,transform;
+  padding-top: 0;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.emas{
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 51%;
+}
+
+.rounded-title-section{
+  font-family: "Bon Vivant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 52px;
+  margin-bottom: 1rem;
+}
+
+.headline-11 {
+  margin-bottom: 2.5rem;
+  font-family: "Bon Vivant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.headline-12 {
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: .1px;
+}
+
+.img-rounded{
+  border-radius: .75rem;
+}
+
+.arch-line {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1.5px solid #D4AF37;
+  border-radius: 340px 340px 25px 25px;
+  pointer-events: none;
+  z-index: 5;
+  opacity: .6;
+}
+
+.z-10 {
+  z-index: 10;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.z-10 img{
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-line{
+  opacity: 1;
+  transform: translateZ(0);
+  transition-duration: 1.5s;
+  transition-timing-function: ease;
+  transition-duration: .4s;
+  transition-property: opacity,transform;
+  width: 50%;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+.caption {
+  font-family: Noto Sans,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(13px, 0.3vw, 23px);
+  line-height: 20px;
+  text-align: center;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mempelai{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-mempelai{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+.foto-mempelai-wanita{
+  float: right;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: -34%;
+  height: 105%;
+}
+.foto-mempelai-pria{
+  float: right;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: -60%;
+  height: 151%;
+}
+.body-77 {
+  margin-bottom: 1.25rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.2px;
+  line-height: 25px;
+  letter-spacing: .1px;
+}
+
+.content-mempelai-wanita{
+  padding-top: 2rem;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  margin-bottom: 3.5rem;
+  background-image: url('../assets/background-pengantin-perempuan.png');
+  background-size: 100% 100%;
+  height: 186vh;
+  max-height: 475px;
+  position: relative;
+}
+.content-mempelai-pria{
+  padding-top: 2rem;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 133vh;
+  max-height: 480px;
+}
+.foto-mempelai{
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  margin-bottom: 3.5rem;
+}
+
+.relative{
+  width: 100%;
+  position: relative;
+}
+
+.orn-couple-edge.left {
+  left: 0%;
+  transform: translate(-55%) rotate(-12deg);
+}
+.orn-couple-edge {
+  position: absolute;
+  width: 40%;
+  max-width: 460px;
+  top: -10%;
+  z-index: 0;
+}
+
+.orn-couple-edge.right {
+  right: 0%;
+  transform: translate(55%) rotate(12deg) scaleX(-1);
+}
+.orn-couple-edge {
+  position: absolute;
+  width: 40%;
+  max-width: 460px;
+  top: -10%;
+  z-index: 0;
+}
+
+.w-full{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.manten{
+  margin-top: 8%;
+  font-size: 38px;
+  font-family: "Citadel Script";
+  line-height: 27px;
+  letter-spacing: .2px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 34rem;
+}
+.caption-1 {
+  font-family: Noto Sans,sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+#wishes-container{
+  text-align: left;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.caption-2{
+  font-family: Noto Sans,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(85 57 28);
+  margin-bottom: 0 !important;
+}
+
+.caption-3{
+  font-family: Noto Sans,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(171 171 171);
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.caption-4{
+  font-family: Noto Sans,sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(85 57 28);
+}
+
+.caption-11{
+  font-size: 38px;
+  font-family: "Citadel Script";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: .2px;
+  position: relative;
+  z-index: 1;
+}
+.caption-12 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: clamp(12.8px, 0.3vw, 25px);
+  line-height: 13px;
+  margin-bottom: 0;
+}
+.headline-11 {
+  font-family: "Bon Vivant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.divider{
+  width: 100%;
+  position: relative;
+}
+
+.divider-content{
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  z-index: 10;
+  position: relative;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.logo{
+margin: 0 auto;
+  display: block;
+  width: 25%;
+  margin-bottom: 0.2rem;
+}
+
+.caption-10 {
+  margin: 0;
+  font-family: Dorif Serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(12px, 0.3vw, 23px);
+  line-height: 19px;
+}
+
+.and{
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  margin-top: 11%;
+}
+.and img{
+  width:75%;
+}
+.acara-section{
+  padding-bottom: 1.25rem;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.acara-content{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.acara-content img{
+  margin-bottom: .25rem
+}
+
+.headline-20 {
+  font-family: "Citadel Script";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 58px;
+}
+
+.border-black {
+  border-color: #000000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.text-align-center{
+  text-align: center;
+}
+.caption-14{
+  font-family:  "Cormorant Garamond", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.detail-acara{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: .75rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: .625rem;
+}
+
+.detail-acara p{
+  text-align: center;
+}
+.w-70{
+  margin: 0 auto;
+  width: 70%!important;
+}
+.caption-gift{
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  font-size: 18px;
+  width:67%;
+}
+.headline-21{
+  font-family: "Citadel Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 22px;
+}
+
+.border-gold{
+  opacity: 1;
+  border-color: rgb(209 178 138);
+  margin-bottom: 1.75rem;
+  margin-top: 1.25rem;
+}
+
+.body-777{
+  font-family: Aston Script;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.2px;
+  line-height: 25px;
+  letter-spacing: .1px;
+  color: rgb(87, 13, 16);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.body-7{
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.2px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.body-5 {
+  margin-bottom: 0;
+  font-family:  "London";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.d-img{
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mt-2{
+  margin-top: .5rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.pt-5{
+  padding-top: 5rem;
+}
+
+.btn-map{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.bg-linear-btn{
+  background: linear-gradient(282.22deg,#000000 0%,#a98466 100%);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 90%;
+}
+.bg-linear-btn-cal{
+  background: linear-gradient(282.22deg,#000000 0%,#a98466 100%);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.body-6{
+font-family:  "Cormorant Garamond", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(12.8px, 0.3vw, 23px);
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} 
+
+.text-white{
+  color: white;
+}
+
+.acara-section{
+background-image: url("../assets/section-5.png");
+  padding-top: 7.5rem;
+  padding-bottom: 16.5rem;
+  border-radius: .75rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.gallery-section{
+  background-image: url("../assets/section-6.png");
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: .75rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 33%;
+  margin-top: -12%;
+}
+
+.caption-9{
+  font-family: Noto Sans,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(12px, 0.3vw, 23px);
+  line-height: 16px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.column-flex{
+  flex-direction: row;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.flexbox{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+
+.itemcenter{
+  align-items: center;
+}
+
+.px-1{
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+.px-2 {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.column-content{
+  padding-left: .5rem;
+  padding-right: .5rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.column-img{
+  object-fit: cover;
+  border-radius: .5rem;
+  width: 100%;
+  aspect-ratio: 4/5;
+  margin-bottom: 1rem;
+}
+
+.row-img{
+  object-fit: cover;
+  border-radius: .5rem;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1rem;
+}
+
+.closing-section{
+  padding-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  background-image: url('../assets/section-9.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-closing{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 1.5rem;
+  position: relative;
+  padding-bottom: 10%;
+}
+.background-closing-title{
+  font-family: "Citadel Script";
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(35px, 0.97vw, 62px);
+  line-height: 58px;
+  text-align: center;
+  margin-top: -18%;
+}
+.background-closing-caption{
+  font-family: Dorif Serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(13px, 0.3vw, 23px);
+  text-align: center;
+  line-height: 1.4;
+  align-items: center;
+}
+
+.background-closing img{
+  margin: 0 auto;
+  width: 40%;
+  margin-top: -35%;
+}
+
+
+.img-closing{
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+ .countdown {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+  column-gap: 30px;
+  row-gap: 15px;
+  position: relative;
+} 
+
+.box-count{
+  background: #d9c8ab;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.5rem;
+  opacity: 1;
+  border-radius: .5rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.flex-box{
+  display: flex;
+  padding-top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.p-2 {
+  padding: .5rem;
+}
+.rounded-sm {
+  border-radius: .125rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.flexbox input{
+  outline: none;
+  border: none;
+}
+
+.mt-5{
+  margin-top: 1.25rem!important;
+}
+.mb-5{
+  margin-bottom: 1.25rem!important;
+}
+.space-x-12 > * + * {
+  margin-left: 3rem; 
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem!important;
+}
+
+.btn-confirm{
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  background-color: rgb(229 217 182);
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255);
+  border-width: 1px;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 6rem!important;
+}
+.pb-6 {
+  padding-bottom: 1.5rem!important;
+}
+.px-6 {
+  padding-left: 1.5rem!important;
+  padding-right: 1.5rem!important;
+}
+
+textarea{
+  border: none;
+  outline: none;
+  resize: none;
+  height: 200px;
+}
+
+.brown{
+  color: rgb(85 57 28);
+}
+
+.img-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.img-popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.img-popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  color: #ddd;
+}
+
+.foto-cover-mempelai{
+  margin-top: -10%;
+  display: flex;
+  align-content: center;
+}
+.foto-cover-mempelai img{
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+.bingkai{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bingkai-tgl{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.box-ayat{
+  margin: 0 auto;
+  position: relative;
+  width: 70%;
+  padding: 0 0;
+  margin-top: 41%;
+  margin-bottom: 28%;
+}
+
+.content-bottom{
+  margin-top: -15%;
+  padding-top: 2rem;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  margin-bottom: 3.5rem;
+  background-image: url('../assets/background-mempelai-pria.png');
+  background-size: 100% 100%;
+  height: 186vh;
+  max-height: 475px;
+  position: relative;
+}
+
+.rekening{
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.btn-copy{
+  background-color: #7a9352;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+}
+.rekening img{
+  width: 20%;
+}
+
+.slide-section{
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 5%;
+}
+
+.slide-section img{
+  object-fit: cover;
+  border-radius: 10px;
+  aspect-ratio: 3/4;
+}
+
+swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper {
+      height: 80%;
+      width: 100%;
+    }
+
+    .mySwiper2 {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper2 swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper2 .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+@media (min-width: 640px) {
+  .navigation{
+    left: 33.333333%;
+    right: 33.333333%;
+  }
+}
+@media (max-width: 640px){
+  .bg-linear-btn-cal{
+    width: 106%;
+  }
+}
