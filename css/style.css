@@ -88,18 +88,18 @@ body {
   display: none;
 } */
 .cover-section{
-background-image: url("../assets/background-cover-coba.png");
+  background-image: url("../assets/background-cover-coba.png");
   background-color: #f5f3f1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  height: 100dvh;
   position: relative;
   padding-top: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  z-index: 11;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-top: 1%;
+  padding-bottom: 125%;
 }
 
 .cover-content{
@@ -135,6 +135,7 @@ background-image: url("../assets/background-cover-coba.png");
   text-decoration-style: solid;
   text-decoration-thickness: auto;
   text-transform: uppercase;
+  margin-bottom: 0!important;
 }
 
 .name-cover{
@@ -279,15 +280,15 @@ video{
   transition-duration: .4s;
   background-image: url('../assets/background-section-2.png');
   transition-property: opacity,transform;
-  padding-top: 0;
-  padding-bottom: 15.5rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  flex-direction: column;
-  display: flex;
+  padding-top: 25%;
+  padding-bottom: 54%;
+  padding-left: 1.75%;
+  padding-right: 1.75%;
+  display: block;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 .gift-section{
   position: relative;
@@ -412,8 +413,8 @@ video{
   font-size: clamp(13px, 0.3vw, 23px);
   line-height: 20px;
   text-align: center;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
   width: 80%;
   margin: 0 auto;
 }
@@ -435,22 +436,24 @@ video{
   margin-bottom: 2.5rem;
 }
 .foto-mempelai-wanita{
-  float: right;
+/* float: right; */
   width: 100%;
-  z-index: 1;
+  /* z-index: 1;
   position: absolute;
   right: 0;
-  bottom: -34%;
-  height: 105%;
+  bottom: -26%;
+  height: 78vh;
+  max-height: 500px; */
 }
+
 .foto-mempelai-pria{
   float: right;
   width: 100%;
   z-index: 1;
-  position: absolute;
-  right: 0;
+  /* position: absolute; */
+  /* right: 0;
   bottom: -60%;
-  height: 151%;
+  height: 151%; */
 }
 .body-77 {
   margin-bottom: 1.25rem;
@@ -470,10 +473,9 @@ video{
   display: flex;
   margin-bottom: 3.5rem;
   background-image: url('../assets/background-pengantin-perempuan.png');
-  background-size: 100% 100%;
-  height: 186vh;
-  max-height: 475px;
+  background-size: cover;
   position: relative;
+  background-position: center;
 }
 .content-mempelai-pria{
   padding-top: 2rem;
@@ -482,8 +484,8 @@ video{
   width: 100%;
   display: flex;
   position: relative;
-  height: 133vh;
-  max-height: 480px;
+  /* height: 133vh;
+  max-height: 480px; */
 }
 .foto-mempelai{
   align-items: center;
@@ -652,20 +654,11 @@ margin: 0 auto;
 .and img{
   width:75%;
 }
-.acara-section{
-  padding-bottom: 1.25rem;
-  padding-top: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-}
-
 .acara-content{
-  align-items: center;
+align-items: center;
   flex-direction: column;
   display: flex;
+  margin-top: 15%;
 }
 
 .acara-content img{
@@ -700,13 +693,10 @@ margin: 0 auto;
 }
 
 .detail-acara{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-radius: .75rem;
+  margin-bottom: 17%;
   align-items: center;
   flex-direction: column;
   display: flex;
-  margin-top: .625rem;
 }
 
 .detail-acara p{
@@ -849,15 +839,18 @@ font-family:  "Cormorant Garamond", serif;
 }
 
 .acara-section{
-background-image: url("../assets/section-5.png");
-  padding-top: 7.5rem;
-  padding-bottom: 16.5rem;
-  border-radius: .75rem;
+  padding-top: 27%;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   display: flex;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  margin-bottom: 3.5rem;
+  background-image: url('../assets/section-5.png');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  padding-bottom: 38%;
+  margin-top: -21%;
 }
 .gallery-section{
   background-image: url("../assets/section-6.png");
@@ -993,24 +986,30 @@ background-image: url("../assets/section-5.png");
  .countdown {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  margin-top: 1.5rem;
-  margin-bottom: 3.5rem;
-  column-gap: 30px;
-  row-gap: 15px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  column-gap: 1em;
+  row-gap: 1em;
   position: relative;
+  width: 48%;
 } 
 
 .box-count{
-  background: #d9c8ab;
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
-  padding-top: 1.2rem;
-  padding-bottom: 1.5rem;
+background: #d9c8ab;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  padding-top: 1.2em;
+  padding-bottom: 1.5em;
   opacity: 1;
   border-radius: .5rem;
   align-items: center;
   flex-direction: column;
   display: flex;
+  width: 80%;
+}
+
+.box-mempelai{
+  position: relative;
 }
 
 .flex-box{
@@ -1169,20 +1168,22 @@ textarea{
 .bingkai-tgl{
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 90%;
   z-index: 1;
   margin: 0 auto;
+  height: 110%;
 }
 
 .box-ayat{
-  margin: 0 auto;
+margin: 0 auto;
   position: relative;
   width: 70%;
   padding: 0 0;
-  margin-top: 41%;
-  margin-bottom: 28%;
+  margin-top: 20%;
+  margin-bottom: 65%;
 }
 
 .content-bottom{
@@ -1195,8 +1196,8 @@ textarea{
   margin-bottom: 3.5rem;
   background-image: url('../assets/background-mempelai-pria.png');
   background-size: 100% 100%;
-  height: 186vh;
-  max-height: 475px;
+  /* height: 186vh;
+  max-height: 475px; */
   position: relative;
 }
 
